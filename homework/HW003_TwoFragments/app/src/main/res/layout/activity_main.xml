@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.android.hw003_twofragments.MainActivity">
+
+    <FrameLayout
+        android:id="@+id/a_main_fl_list_fragment"
+        android:visibility="visible"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <fragment
+            android:id="@+id/a_main_fg_list"
+            android:name="com.example.android.hw003_twofragments.UserListFragment"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:tag="USER_LIST_FRAGMENT_TAG" />
+    </FrameLayout>
+
+
+    <FrameLayout
+        android:id="@+id/a_main_fl_detail_fragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone">
+
+        <fragment
+            android:id="@+id/a_main_fg_detail"
+            android:name="com.example.android.hw003_twofragments.DetailFragment"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:tag="DETAIL_FRAGMENT_TAG" />
+    </FrameLayout>
+
+
+</FrameLayout>

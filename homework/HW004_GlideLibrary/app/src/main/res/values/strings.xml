@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">HW004_GlideLibrary</string>
+    <string name="example_prompt">Select an example</string>
+    <string-array name="glide_examples">
+        <item>Basic usage</item>
+        <item>Advanced usage</item>
+        <item>Placeholder and error images</item>
+        <item>Cropping image</item>
+        <item>Fitting image</item>
+        <item>Loading errors</item>
+        <item>Rounder corners</item>
+        <item>Circle crop</item>
+        <item>Blur</item>
+        <item>Multiple transformations</item>
+    </string-array>
+</resources>
