@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.android.et007_multiscreen.MainActivity">
+
+    <TextView
+        android:id="@+id/a_main_tv_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Hello World!" />
+
+    <!--It saves values because an id was defined-->
+    <EditText
+        android:id="@+id/a_main_et_user"
+        android:hint="New user"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <Button
+        android:text="Add user"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="addNewUser"/>
+
+    <Button
+        android:text="@string/do_magic"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="doMagic"/>
+
+    <ListView
+        android:id="@+id/a_main_lv_list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+
+
+</LinearLayout>

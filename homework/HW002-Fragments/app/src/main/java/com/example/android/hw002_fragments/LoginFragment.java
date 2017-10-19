@@ -2,6 +2,7 @@ package com.example.android.hw002_fragments;
 
 
 import android.content.Context;
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.v4.app.Fragment;
@@ -21,6 +22,7 @@ import org.w3c.dom.Text;
 public class LoginFragment extends Fragment {
 
     private Button btnLogin;
+    private Button btnSecondLauncher;
     private OnLoginActions onLoginActions;
     private EditText etUsername;
     private EditText etPassword;
@@ -46,6 +48,7 @@ public class LoginFragment extends Fragment {
     public void onViewCreated(final View view, @Nullable Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
         btnLogin = (Button) view.findViewById(R.id.f_login_btn_login);
+        btnSecondLauncher = (Button) view.findViewById(R.id.f_login_btn_second_launcher);
         etUsername = (EditText) view.findViewById(R.id.f_login_et_user);
         etPassword = ((EditText) view.findViewById(R.id.f_login_et_password));
 
@@ -59,6 +62,14 @@ public class LoginFragment extends Fragment {
                 }else{
                     Toast.makeText(getContext(), "Username and password are required.", Toast.LENGTH_SHORT).show();
                 }
+            }
+        });
+
+        btnSecondLauncher.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(getContext(), SecondActivity.class);
+                startActivity(intent);
             }
         });
     }

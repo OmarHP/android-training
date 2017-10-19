@@ -105,7 +105,7 @@ public class DetailFragment extends Fragment implements View.OnClickListener {
         request.setTitle("Dummy download ");
         request.setDescription("Downloading " + "sample" + ".png");
         request.setVisibleInDownloadsUi(true);
-        request.setNotificationVisibility(DownloadManager.Request.VISIBILITY_VISIBLE_NOTIFY_ONLY_COMPLETION);
+        request.setNotificationVisibility(DownloadManager.Request.VISIBILITY_VISIBLE_NOTIFY_COMPLETED);
         request.setDestinationInExternalPublicDir(Environment.DIRECTORY_DOWNLOADS, "/HW002/"  + "sample" + ".png");
         downloadManager.enqueue(request);
     }
