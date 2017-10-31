@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@drawable/background_item_selector"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:id="@+id/ly_repo_name"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="32dp"
+        android:layout_marginRight="32dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="8dp"
+        android:maxLines="1"
+        android:textAppearance="@style/TextAppearance.AppCompat.Headline"
+        app:layout_constraintEnd_toStartOf="@+id/imageView"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="AIND-Isolation" />
+
+    <TextView
+        android:id="@+id/ly_repo_descr"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
+        android:text="TextView"
+        android:textAppearance="@style/TextAppearance.AppCompat.Caption"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/ly_repo_name"
+        app:layout_constraintTop_toBottomOf="@+id/ly_repo_name" />
+
+    <TextView
+        android:id="@+id/ly_repo_likes"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
+        android:textAppearance="@style/TextAppearance.AppCompat.Tooltip"
+        app:layout_constraintBottom_toTopOf="@+id/ly_repo_name"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ly_repo_name"
+        tools:text="5" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="15dp"
+        android:layout_height="15dp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginRight="24dp"
+        android:background="@drawable/ic_thumb_up_blue_24dp"
+        app:layout_constraintBottom_toTopOf="@+id/ly_repo_name"
+        app:layout_constraintEnd_toEndOf="@+id/ly_repo_likes"
+        app:layout_constraintTop_toBottomOf="@+id/ly_repo_name" />
+</android.support.constraint.ConstraintLayout>

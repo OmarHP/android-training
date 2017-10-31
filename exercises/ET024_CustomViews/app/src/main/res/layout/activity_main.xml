@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.android.et024_customviews.MainActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Hello World!"/>
+
+    <Button
+        android:text="Add custom view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="doCustomMagic"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Add button"
+        android:onClick="doMagic"/>
+
+    <LinearLayout
+        android:id="@+id/a_main_linear"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+    </LinearLayout>
+
+    <FrameLayout
+        android:id="@+id/a_main_frame"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimaryDark"></FrameLayout>
+
+    <com.example.android.et024_customviews.MyRectangle
+        app:showCircle = "true"
+        app:showSquare = "false"
+        app:figureColor = "@android:color/holo_green_light"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        />
+
+</LinearLayout>

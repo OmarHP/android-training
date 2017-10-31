@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="MyRectangle">
+        <attr name="showCircle" format="boolean"/>
+        <attr name="showSquare" format="boolean"/>
+        <attr name="figureColor" format="color"/>
+    </declare-styleable>
+</resources>
