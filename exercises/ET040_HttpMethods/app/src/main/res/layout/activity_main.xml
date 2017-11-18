@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.android.et040_httpmethods.MainActivity">
+
+    <Button
+        android:id="@+id/a_main_all"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:text="Get All"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/a_main_one"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="Get One"
+        app:layout_constraintEnd_toEndOf="@+id/a_main_all"
+        app:layout_constraintStart_toStartOf="@+id/a_main_all"
+        app:layout_constraintTop_toBottomOf="@+id/a_main_all" />
+
+    <Button
+        android:id="@+id/a_main_create"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="Create"
+        app:layout_constraintEnd_toEndOf="@+id/a_main_one"
+        app:layout_constraintStart_toStartOf="@+id/a_main_one"
+        app:layout_constraintTop_toBottomOf="@+id/a_main_one" />
+
+    <Button
+        android:id="@+id/a_main_update"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="Update"
+        app:layout_constraintEnd_toEndOf="@+id/a_main_create"
+        app:layout_constraintStart_toStartOf="@+id/a_main_create"
+        app:layout_constraintTop_toBottomOf="@+id/a_main_create" />
+
+    <Button
+        android:id="@+id/a_main_delete"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="Delete"
+        app:layout_constraintEnd_toEndOf="@+id/a_main_update"
+        app:layout_constraintStart_toStartOf="@+id/a_main_update"
+        app:layout_constraintTop_toBottomOf="@+id/a_main_update" />
+</android.support.constraint.ConstraintLayout>

@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "11078725356",
+    "firebase_url": "https://redditlikeproject.firebaseio.com",
+    "project_id": "redditlikeproject",
+    "storage_bucket": "redditlikeproject.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:11078725356:android:5b033f32d443bd80",
+        "android_client_info": {
+          "package_name": "com.example.android.redditlikeproject"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "11078725356-sge8906hkamlr6u8ov9aetr9h0j1d24d.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBNUqkwDgzooYKtw80IRH1JxsoUmWODgA0"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
